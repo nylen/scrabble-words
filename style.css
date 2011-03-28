@@ -1,0 +1,98 @@
+/* This file is part of Scrabble-Words.
+ * Copyright (C) 2011 by James Nylen.
+ *
+ * Scrabble-Words is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Scrabble-Words is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Scrabble-Words.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 90%;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  outline: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+table#words {
+  border-spacing: 0;
+  padding-top: 38px;
+}
+tr.header {
+  position: fixed;
+  width: 100%;
+  margin-top: -38px;
+  background: #ddd;
+  border-bottom: 1px solid #aaa;
+  height: 30px;
+  padding: 4px;
+  vertical-align: middle;
+}
+th {
+  padding: 0;
+  text-align: left;
+  height: 28px;
+  vertical-align: middle;
+}
+th.definition {
+  padding-left: 20px;
+}
+
+th.word, td.word {
+  width: 100px;
+}
+th.date-added, td.date-added {
+  width: 140px;
+}
+th.added-by, td.added-by {
+  width: 100px;
+}
+
+td.word {
+  padding-left: 6px;
+}
+td.definition {
+  padding-right: 6px;
+}
+tr.odd {
+  background: #eee;
+}
+
+input#add-words-text {
+  width: 300px;
+}
+input#jump-to-word {
+  width: 120px;
+  margin-left: 40px;
+}
+#jump-to-top {
+  margin-right: 20px;
+}
+
+input.inactive {
+  color: #777;
+}
+
+span.part-of-speech {
+  color: #777;
+}
+span.no-definitions {
+  font-style: italic;
+  color: #700;
+}
